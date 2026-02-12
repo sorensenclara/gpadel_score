@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viewer - Marcador</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="marker gp-bg">
+  <main class="pb2 panel">
+    <header class="gpadel-topbar">
+      <div class="gpadel-topbar__brand">
+        <img id="logo" src="" alt="Logo" />
+      </div>
+
+      <div class="gpadel-topbar__center">
+        <div class="gpadel-topbar__kicker">Código:</div>
+        <div id="codePill" class="gpadel-topbar__code">—</div>
+      </div>
+
+      <div class="gpadel-topbar__right">
+        <span class="gp-badge" aria-label="Estado">Actualización en vivo</span>
+      </div>
+    </header>
+
+    <h1 class="gpadel-title">GAME EN JUEGO</h1>
+
+    <section class="gpadel-grid-2" aria-label="Marcador principal">
+      <article class="panel inner control-viewer">
+        <div>
+          <div class="gpadel-teamcard__label">Equipo</div>
+          <div id="teamAName" class="gpadel-teamcard__name">—</div>
+        </div>
+        <div id="pointsA" class="gpadel-teamcard__point">0</div>
+      </article>
+
+      <article class="panel inner control-viewer">
+        <div>
+          <div class="gpadel-teamcard__label">Equipo</div>
+          <div id="teamBName" class="gpadel-teamcard__name">—</div>
+        </div>
+        <div id="pointsB" class="gpadel-teamcard__point">0</div>
+      </article>
+    </section>
+
+    <section class="gpadel-sets" aria-label="Sets">
+      <div class="gpadel-sets__head">
+        <div style="text-align:center">Set</div>
+        <div id="teamAName" style="text-align:center">—</div>
+        <div id="teamBName" style="text-align:center">—</div>
+      </div>
+
+      <div class="gpadel-sets__row">
+        <div class="gpadel-sets__set">1</div>
+        <div class="gpadel-sets__cell" id="s1a">0</div>
+        <div class="gpadel-sets__cell" id="s1b">0</div>
+      </div>
+
+      <div class="gpadel-sets__row">
+        <div class="gpadel-sets__set">2</div>
+        <div class="gpadel-sets__cell" id="s2a">0</div>
+        <div class="gpadel-sets__cell" id="s2b">0</div>
+      </div>
+
+      <div class="gpadel-sets__row">
+        <div class="gpadel-sets__set">3</div>
+        <div class="gpadel-sets__cell" id="s3a">0</div>
+        <div class="gpadel-sets__cell" id="s3b">0</div>
+      </div>
+    </section>
+
+    <!-- Opcional: super tie-break -->
+    <section id="superTbWrap" class="gpadel-sets" style="display:none; margin-top:12px;" aria-label="Super tie-break">
+      <div class="gpadel-sets__head">
+        <div style="text-align:center">TB</div>
+        <div style="text-align:center">A</div>
+        <div style="text-align:center">B</div>
+      </div>
+      <div class="gpadel-sets__row">
+        <div class="gpadel-sets__set">—</div>
+        <div class="gpadel-sets__cell" id="superTbA">0</div>
+        <div class="gpadel-sets__cell" id="superTbB">0</div>
+      </div>
+    </section>
+
+    <p class="gpadel-footnote" id="matchStatus">Actualización en vivo - no requiere recarga</p>
+  </main>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/score.js"></script>
+</body>
+</html>

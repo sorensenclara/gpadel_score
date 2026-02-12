@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPADEL Score | Equipos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="gp-score-body">
+  <main class="gp-score-wrap">
+    <section class="pb2 panel pb2">
+
+      <!-- CABECERA -->
+      <header class="pb2-head">
+        <div class="pb2-brand">
+          <img id="logo" class="pb2-logo" alt="Logo">
+          <div class="pb2-title">
+            <div class="pb2-sub">Código</div>
+            <div class="pb2-club"><span id="codeTxt">—</span></div>
+          </div>
+        </div>
+
+        <div class="pb2-actions">
+          <a id="linkViewer" class="gpadel-btn pb2-status" href="#">Ver marcador</a>
+        </div>
+      </header>
+
+      <!-- TITULO -->
+      <div class="pb2-titleblock">
+        <div id="modeTitle" class="pb2-h1">PARTIDO</div>
+        <div class="pb2-sub">Cargá los nombres (opcionales) y pasá al admin.</div>
+      </div>
+
+      <!-- FORM -->
+      <form id="teamsForm" class="panel inner gp-teams-card" autocomplete="off">
+        <div class="gp-form-section">
+          <div class="pb2-sub gp-form-title">Equipo A</div>
+          <div class="gp-grid-2">
+            <input id="a1n" class="gp-input" placeholder="Nombre jugador 1 (opcional)">
+            <input id="a1a" class="gp-input" placeholder="Apellido jugador 1">
+            <input id="a2n" class="gp-input" placeholder="Nombre jugador 2 (opcional)">
+            <input id="a2a" class="gp-input" placeholder="Apellido jugador 2">
+          </div>
+        </div>
+
+        <div class="gp-form-section">
+          <div class="pb2-sub gp-form-title">Equipo B</div>
+          <div class="gp-grid-2">
+            <input id="b1n" class="gp-input" placeholder="Nombre jugador 1 (opcional)">
+            <input id="b1a" class="gp-input" placeholder="Apellido jugador 1">
+            <input id="b2n" class="gp-input" placeholder="Nombre jugador 2 (opcional)">
+            <input id="b2a" class="gp-input" placeholder="Apellido jugador 2">
+          </div>
+        </div>
+
+        <div class="gp-center">
+          <button class="pb2-status" type="submit">Ir al admin del marcador</button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="../js/score.js"></script>
+</body>
+</html>

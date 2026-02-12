@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPADEL - Plataforma de Gestión de Padel</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap (primero) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- mi CSS (después, para que gane y no lo pise Bootstrap) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<header class="gp-header">
+    <div class="gp-container gp-header-inner">
+      <a href="index.html" class="gp-logo-link">
+        <img src="img/gpadel-logo.svg" alt="GPADÉL - Plataforma de gestión de pádel" class="gp-logo-img">
+      </a>
+
+      <!-- Navegación desktop -->
+      <nav class="gp-nav">
+        <a href="index.html" class="gp-nav-link--active">Quienes Somos</a>
+        <a href="pages/createscore.html" class="gp-nav-link">Crear Marcador</a>
+        <a href="pages/created-scores.html" class="gp-nav-link">Marcadores creados</a>
+        <a href="pages/contact.html" class="gp-nav-link">Contacto</a>
+      </nav>
+
+  <!-- Botón hamburguesa -->
+        <button class="gp-header-burger" id="gpMenuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- NAV MOBILE (se abre con la hamburguesa, js base extra, repito, no conozco JS aun) -->
+        <nav class="gp-nav-mobile" id="gpMobileNav">
+        <a href="index.html" class="gp-nav-link--active">Quienes Somos</a>
+        <a href="pages/createscore.html" class="gp-nav-link">Crear Marcador</a>
+        <a href="pages/created-scores.html" class="gp-nav-link">Marcadores creados</a>
+        <a href="pages/contact.html" class="gp-nav-link">Contacto</a>
+        </nav>
+
+</header>
+
+  <!-- HERO -->
+  <section id="hero" class="gp-hero">
+    <div class="gp-container gp-hero-inner">
+
+      <!-- TEXTO -->
+      <div class="gp-hero-text">
+        <h1>
+          Llevá el control del partido<br>
+          con el marcador GPADEL
+        </h1>
+        <p>Gratis y fácil de usar.</p>
+      <div>
+        <a class="gp-btn gp-btn--primary" href="pages/createscore.html" style="text-decoration:none;">Crear marcador</a>
+      </div>
+
+      </div>
+
+      <!-- IMAGEN DE LA CANCHA y PELOTA-->
+      <div class="gp-hero-image">
+        <img src="img/img-pelota-gpadel.png" alt="Pádel" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA DESCRIPCIÓN -->
+  <section id="como-funciona" class="gp-section">
+    <div class="gp-container">
+      <h2 class="gp-section-title">Simulador previo al marcador</h2>
+      <h5 class="text-center">¿Qué es y cómo funciona?</h5>
+
+      <div class="gp-steps">
+
+        <div class="gp-step">
+          <div class="gp-step-icon">
+                    <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div class="gp-step-card">
+            <h3>Configurá el marcador</h3>
+            <p>
+              Este simulador te guía paso a paso para definir cómo se mostrará tu marcador digital de pádel.
+              Podés elegir entre una versión estándar de GPADEL o una versión personalizada con la identidad de tu club o liga.
+            </p>
+          </div>
+        </div>
+
+        <div class="gp-step">
+          <div class="gp-step-icon">
+                     <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div class="gp-step-card">
+            <h3>Elegí tus opciones</h3>
+            <p>
+              A lo largo del proceso, el simulador te solicita distintas decisiones, como colores, tipografía y logo.
+              Cada respuesta es validada automáticamente para asegurar una configuración clara y correcta.
+            </p>
+          </div>
+        </div>
+
+        <div class="gp-step">
+          <div class="gp-step-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+          </div>
+          <div class="gp-step-card">
+            <h3>Confirmá y usá el score</h3>
+            <p>
+              Al finalizar, el simulador muestra un resumen con la configuración elegida.
+              Una vez confirmada, el marcador se carga y queda listo para ser utilizado durante el partido.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="gp-footer">
+    <div class="gp-footer-top gp-container">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5492494521418" target="_blank" rel="noopener" class="gp-footer-block gp-footer-link">
+        <i class="fa-brands fa-whatsapp gp-footer-icon"></i>
+        <span class="gp-footer-text">+54 9 249 4521418</span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:info@gpadel.com.ar" class="gp-footer-block gp-footer-link">
+        <i class="fa-regular fa-envelope gp-footer-icon"></i>
+        <span class="gp-footer-text">info@gpadel.com.ar</span>
+      </a>
+
+      <!-- Dirección -->
+      <a href="https://maps.app.goo.gl/JvontvXCzVbkZqmRA" target="_blank" rel="noopener" class="gp-footer-block gp-footer-link">
+        <i class="fa-solid fa-map-location-dot gp-footer-icon"></i>
+        <span class="gp-footer-text">
+          Alem 1015 – Tandil<br>Buenos Aires – Argentina
+        </span>
+      </a>
+
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="gp-footer-social">
+      <a href="https://facebook.com/geneoscoop" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com/geneos.coop" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/GeneosCoop" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/geneoscoop/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="gp-footer-bottom">
+      DISEÑADO POR COOPERATIVA GENEOS LTDA.
+    </div>
+  </footer>
+
+  <!-- Archivo JS que realicé para el simulador -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

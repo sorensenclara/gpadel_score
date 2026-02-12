@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcador | GPADEL</title>
+
+  <!-- Tipografía default GPADEL -->
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"rel="stylesheet">
+
+  <!-- CSS principal (carpeta en minúscula) -->
+  <link rel="stylesheet" href="../css/style.css"/>
+
+  
+</head>
+<body class="marker">
+  <main class="marker-screen">
+    <!-- Logo -->
+    <img id="logo" class="marker-logo">
+    <!-- Título -->
+    <h1 id="titulo" class="pb2-h1">Marcador de Pádel</h1>
+    <!-- Club / Liga (solo si existe en config) -->
+    <p id="clubLiga" hidden></p>
+    <!-- Subtítulo -->
+    <p id="subtitulo" class="marker-subtitle">
+      Creá un partido nuevo para empezar
+    </p>
+    <div class="marker-actions">
+      <button id="btnCrearPartido" class="gpadel-btn">
+        + Crear partido
+      </button>
+    </div>
+  </main>
+
+  <!-- Archivo JS que realicé para el simulador -->
+  <script src="../js/main.js" defer></script>
+  <script src="../js/score.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "3_sets",
+    "label": "Partido a 3 sets",
+    "sets": 3
+  },
+  {
+    "id": "2_sets_super_tb",
+    "label": "2 sets + super tie-break",
+    "sets": 2,
+    "superTB": true
+  }
+]
